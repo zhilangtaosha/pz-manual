@@ -1,0 +1,42 @@
+#  topicid的值为整数类型，参考 class TopicID(Enum)里的定义
+
+# 空语义frame
+#{"topicid": 0, "domain": "", "intent": "", "slots": {}}
+
+# 故障类
+{"topicid": 10, "domain": "trouble", "intent": "trouble", "slots": {"brand": "", "model": "", "part": "", "operation": "", "phen": "", "temp": "", "runing": "", "turning": "", "speed": "", "rev": "", "weather": "", "road": "", "gear": ""},"weight":{"brand": 0.1, "model": 0.1, "part": 0.8, "operation": 0.6, "phen": 0.8, "temp":0.3, "runing": 0.4, "turning": 0.5, "speed": 0.4, "rev": 0.3, "weather": 0.2, "road": 0.7, "gear": 0.2}}
+
+# 手册分类
+{"topicid": 3, "domain": "fault", "intent": "reason", "slots": {"brand": "", "model": "", "part": "", "operating": "", "phen": "", "features": ""},"weight":{"brand": 0.1, "model": 0.1, "part": 0.7, "operating": 0.6, "phen": 0.3, "features":0.5}}
+
+# 使用技巧
+{"topicid": 2, "domain": "fault", "intent": "reason", "slots": {"brand": "", "model": "", "part_name": "", "action_level": "", "action_mode": "", "part_properties": "", "vision_phen": "", "hearing_phen": "", "feel_phen": "", "weather": "", "road": "", "running_state": ""},"weight":{"brand": 0.1, "model": 0.1, "part_name": 0.7, "action_level": 0.6, "action_mode": 0.8, "part_properties":0.6, "vision_phen": 0.4, "hearing_phen": 0.5, "feel_phen": 0.4, "rev": 0.3, "weather": 0.2, "road": 0.3, "running_state": 0.2}}
+
+# 保险理赔
+{"topicid": 11, "domain": "insurance", "intent": "claim", "slots": {"part":"","damage":"","paid":"","repair":""},"weight":{"part":0.9,"damage":0.9,"paid":0.2,"repair":0.2}}
+
+# 保险投保
+{"topicid": 12, "domain": "insurance", "intent": "buy", "slots": {"insurance_name":"","how_to_buy":""},"weight":{"insurance_name":0.2,"how_to_buy":0.2}}
+
+# 保养
+{"topicid": 13, "domain": "maintain", "intent": "maintain", "slots": {"time_":"","part":"","operation":"","maintain_name":"","how_or_why":""},"weight":{"time_":0.4,"part":0.8,"operation":0.8,"maintain_name":0.4,"how_or_why":0.6}}
+
+# 违章
+{"topicid": 7, "domain": "fault", "intent": "reason", "slots": {"what":"","how":"","degree2":"","who":"","_when":"","_where":"","operation":"","degree1":"","part":"","times":""},"weight":{"what":0.2,"how":0.2,"degree2":0.3,"who":0.4,"_when":0.2,"_where":0.4,"operation":0.6,"degree1":0.4,"part":0.7,"times":0.2}}
+
+# 年检
+{"topicid": 8, "domain": "fault", "intent": "reason", "slots": {"class":"","do":"","ask_type":"","part":"","phen":""},"weight":{"class":0.6,"do":0.4,"ask_type":0.5,"part":0.3,"phen":0.2}}
+
+# 保养周期
+{"topicid": 5, "domain": "maintenance_cycle", "intent": "maintenance_cycle", "slots": {"mileage":"","whether_maintenance":""},"weight":{"mileage":0.8,"whether_maintenance":0.1}}
+
+
+
+
+
+
+
+
+
+
+

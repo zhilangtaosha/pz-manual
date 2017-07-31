@@ -1,0 +1,32 @@
+#  topicid的值为整数类型，参考 class TopicID(Enum)里的定义
+
+# {"topicid": 1, "domain": "fault", "intent": "reason", "slots": {"part": "", "phen": ""}}
+
+# 测试用
+# {"topicid": 1, "slots": {"part": "get_part", "phen": "get_phen"}}
+
+# 手册
+{"topicid": 3, "slots": {"part": "part", "phen": "phen","features":"features","operating":"operating"}}
+
+# 技巧
+{"topicid": 2, "slots": {"part_name": "part_name", "action_level": "action_level","part_properties":"part_properties","action_mode":"action_mode","vision_phen":"vision_phen","hearing_phen":"hearing_phen","feel_phen":"feel_phen"}}
+
+#故障
+{"topicid":10,"slots":{"part":"trouble_get_part","brand":"trouble_get_brand","model":"trouble_get_model","phen":"trouble_get_phen","operation":"trouble_get_operation","road":"trouble_get_road","rev":"trouble_get_rev","temp":"trouble_get_temp","weather":"trouble_get_weather","turning":"trouble_get_turning","runing":"trouble_get_runing","gear":"trouble_get_gear","speed":"trouble_get_speed"}}
+
+#保险理赔
+{"topicid": 11, "domain": "insurance", "intent": "claim", "slots": {"part":"claim_get_part","damage":"claim_get_damage_type","paid":"claim_get_had_paid","repair":"claim_get_repair_or_replace"}}
+
+#保险投保
+{"topicid": 12, "domain": "insurance", "intent": "buy", "slots": {"insurance_name":"insu_get_insurance_name","how_to_buy":"insu_get_how_to_buy"}}
+
+#保养
+{"topicid": 13, "domain": "maintain", "intent": "maintain", "slots": {"time_":"main_get_time","part":"main_get_part","operation":"main_get_operation","maintain_name":"main_get_maintain_name","how_or_why":"main_get_how_or_why"}}
+
+# 违章
+{"topicid": 7, "domain": "fault", "intent": "reason", "slots": {"what":"br_get_what","how":"br_get_how","degree2":"br_get_degree2","who":"br_get_who","_when":"br_get_when","_where":"br_get_where","operation":"br_get_operation","degree1":"br_get_degree1","part":"br_get_part","times":"br_get_times"}}
+
+# 年检
+{"topicid": 8, "domain": "fault", "intent": "reason", "slots": {"class":"as_get_class","do":"as_get_do","ask_type":"as_get_ask_type","part":"as_get_part","phen":"as_get_phen"}}
+# 保养周期
+{"topicid": 5, "domain": "maintenance_cycle", "intent": "maintenance_cycle", "slots": {"mileage":"ext_mileage","whether_maintenance":"ext_whether_maintenance"}}
